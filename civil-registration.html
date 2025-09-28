@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Registration</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/image/registration.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Civil Registration Form</h1>
+        <p>Civil Registration Form is a simple web-based application designed to teach the use of HTML Forms. It mimics the civil registration process, such as basic citizen identity registration.</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <form action="receive.html" method="post">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <label for="fullname">Full name: </label> <br>
+                <input type="text" name="fullname" id="fullname" required placeholder="Input the fullname"> <br><br>
+
+                <label for="personal_id">Personal ID: </label> <br>
+                <input type="text" name="personal_id" id="personal_id" required placeholder="Input the password" maxlength="16" minlength="16"> <br><br>
+
+                <label for="gender">Gender: </label> <br>
+                <input type="radio" name="gender" id="gender_male" value="male"> <label for="gender_male">Male</label>
+                <input type="radio" name="gender" id="gender_female" value="female"> <label for="gender_female">Female</label> <br><br>
+
+                <label for="religion">Religion: </label> <br>
+                <input type="radio" name="religion" id="religion_islam" value="islam"> <label for="religion_islam">Islam</label>
+                <input type="radio" name="religion" id="religion_catholic" value="catholic"> <label for="religion_catholic">Catholic</label>
+                <input type="radio" name="religion" id="religion_protestant" value="protestant"> <label for="religion_protestant">Protestant</label>
+                <input type="radio" name="religion" id="religion_hinduism" value="hinduism"> <label for="religion_hinduism">Hinduism</label>
+                <input type="radio" name="religion" id="religion_buddhism" value="buddhism"> <label for="religion_buddhism">Buddhism</label>
+                <input type="radio" name="religion" id="religion_confucianism" value="confucianism"> <label for="religion_confucianism">Confucianism</label> <br><br>
+
+                <label for="blood_type">Blood Type: </label> <br>
+                <input type="radio" name="blood_type" id="blood_type_a" value="a"> <label for="blood_type_a">A</label>
+                <input type="radio" name="blood_type" id="blood_type_b" value="b"> <label for="blood_type_b">B</label>
+                <input type="radio" name="blood_type" id="blood_type_ab" value="ab"> <label for="blood_type_ab">AB</label>
+                <input type="radio" name="blood_type" id="blood_type_o" value="o"> <label for="blood_type_o">O</label> <br><br>
+
+                <label for="nationality">Nationality: </label> <br>
+                <input type="radio" name="nationality" id="nationality_indonesian" value="indonesian"> <label for="nationality_indonesian">Indonesian</label>
+                <input type="radio" name="nationality" id="nationality_foreigner" value="foreigner"> <label for="nationality_foreigner">Foreigner</label> <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Birth Data</legend>
+                <label for="birth_certificate_id">Birth Certificate ID: </label> <br>
+                <input type="text" name="birth_certificate_id" id="birth_certificate_id" required placeholder="Input the birth certificate ID"> <br><br>
+
+                <label for="birth_date">Birth Date: </label> <br>
+                <input type="date" name="birth_date" id="birth_date" required> <br><br>
+
+                <label for="birth_place">Birth Place: </label> <br>
+                <select name="birth_place" id="birth_place">
+                    <optgroup label="Jakarta">
+                        <option value="east_jakarta">East Jakarta</option>
+                        <option value="west_jakarta">West Jakarta</option>
+                        <option value="north_jakarta">North Jakarta</option>
+                        <option value="south_jakarta">South Jakarta</option>
+                        <option value="central_jakarta">Central Jakarta</option>
+                    </optgroup>
+                    <optgroup label="West Java">
+                        <option value="bandung_regency">Bandung Regency</option>
+                        <option value="west_bandung_regency">West Bandung Regency</option>
+                        <option value="bekasi_regency">Bekasi Regency</option>
+                        <option value="bandung_city">Bandung City</option>
+                        <option value="bekasi_city">Bekasi City</option>
+                        <option value="bogor_city">Bogor City</option>
+                    </optgroup>
+                    <optgroup label="Central Java">
+                        <option value="banjarnegara_regency">Banjarnegara Regency</option>
+                        <option value="banyumas_regency">Banyumas Regency</option>
+                        <option value="batang_regency">Batang Regency</option>
+                        <option value="magelang_city">Magelang City</option>
+                        <option value="pekalongan_city">Pekalongan City</option>
+                        <option value="salatiga_city">Salatiga City</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="kindergarten">Kindergarten: </label> <br>
+                <input type="text" name="kindergarten" id="kindergarten" placeholder="Input the kindergarten"> <br> <br>
+
+                <label for="elementary_school">Elementary School: </label> <br>
+                <input type="text" name="elementary_school" id="elementary_school" placeholder="Input the elementary school"> <br> <br>
+
+                <label for="junior_high_school">Junior High School: </label> <br>
+                <input type="text" name="junior_high_school" id="junior_high_school" placeholder="Input the junior high school"> <br> <br>
+                
+                <label for="high_school">High School: </label> <br>
+                <input type="text" name="high_school" id="high_school" placeholder="Input the high school"> <br> <br>
+
+                <label for="college">College: </label> <br>
+                <input type="text" name="college" id="college" placeholder="Input the college"> <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Profession</legend>
+                <label for="profession">Profession: </label> <br>
+                <select name="birth_place" id="birth_place">
+                    <option value="civil_servant">Civil Servant</option>
+                    <option value="military">Military</option>
+                    <option value="police">Police Officer</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="lecturer">Lecturer</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="nurse">Nurse</option>
+                    <option value="farmer">Farmer</option>
+                    <option value="fisherman">Fisherman</option>
+                    <option value="private_employee">Private Employee</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="laborer">Laborer</option>
+                    <option value="driver">Driver</option>
+                    <option value="trader">Trader</option>
+                    <option value="programmer">Programmer</option>
+                    <option value="designer">Designer</option>
+                    <option value="artist">Artist</option>
+                    <option value="others">Others</option>
+                </select> <br><br>
+
+                <label for="workplace">Workplace: </label> <br>
+                <input type="text" name="workplace" id="workplace" placeholder="Input the workplace"> <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Family and Marital Status</legend>
+                <label for="marital_status">Marital Status: </label> <br>
+                <input type="radio" name="marital_status" id="marital_status_married" value="married"> <label for="marital_status_married">Married</label>
+                <input type="radio" name="marital_status" id="marital_status_single" value="single"> <label for="marital_status_single">Single</label>
+                <input type="radio" name="marital_status" id="marital_status_widower" value="widower"> <label for="marital_status_widower">Widower</label>
+                <input type="radio" name="marital_status" id="marital_status_widow" value="widow"> <label for="marital_status_widow">Widow</label> <br><br>
+
+                <label for="wedding_date">Wedding Date: </label> <br>
+                <input type="date" name="wedding_date" id="wedding_date"> <br><br>
+
+                <label for="relationship_family">Relationship Status in the Family: </label> <br>
+                <input type="radio" name="relationship_family" id="relationship_family_head_family" value="head_family"> <label for="relationship_family_head_family">Head Family</label>
+                <input type="radio" name="relationship_family" id="relationship_family_wife" value="wife"> <label for="relationship_family_wife">Wife</label>
+                <input type="radio" name="relationship_family" id="relationship_family_child" value="child"> <label for="relationship_family_child">Child</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Immigration Document</legend>
+                <label for="passport_id">Passport: </label> <br>
+                <input type="text" name="passport_id" id="passport_id" placeholder="Input the passport id" minlength="9" maxlength="9"> <br><br>
+
+                <label for="kitap_id">KITAP: </label> <br>
+                <input type="text" name="kitap_id" id="kitap_id" placeholder="Input the kitap id" minlength="11" maxlength="11"> <br>
+            </fieldset>
+
+            <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
